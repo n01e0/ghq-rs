@@ -1,0 +1,14 @@
+[package]
+name = "ghq-rs"
+version = "0.1.0"
+authors = ["n01e0 <noleo@vanillabeans.mobi>"]
+edition = "2018"
+description = "Rust implimentation ghq(https://github.com/x-motemen/ghq)"
+license = "MIT"
+readme = "README.md"
+
+[dependencies]
+git2 = "0.13.6"
+clap = "2.33.1"
+colored = "1.9.3"
+url = "2.1.1"
