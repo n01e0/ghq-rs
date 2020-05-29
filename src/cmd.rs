@@ -1,9 +1,13 @@
 use crate::util;
+use git2::{Repository};
 
 pub fn get(url: &str) {
     match util::url2path(url) {
         Ok(path) => {
-            println!("cloning {} to {}", url, path);
+            match Repository::clone_recurse(url, path) {
+                Ok(repo) => println!("cloned {:?}", repo.path()),
+                Err(e) => eprintln!("{}", e.message()),
+            }
         },
         Err(e) => eprintln!("{}", e),
     }

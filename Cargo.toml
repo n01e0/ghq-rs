@@ -1,6 +1,6 @@
 [package]
 name = "ghq-rs"
-version = "0.1.0"
+version = "0.1.1"
 authors = ["n01e0 <noleo@vanillabeans.mobi>"]
 edition = "2018"
 description = "Rust implimentation ghq(https://github.com/x-motemen/ghq)"
